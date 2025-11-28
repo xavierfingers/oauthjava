@@ -1,0 +1,27 @@
+server:
+  port: 8080
+logging:
+  level:
+    root: INFO
+spring:
+  security:
+    user:
+      name: admin
+      password: r$t#ffF
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id:  459422110811-o0o437qbipn11918d5eidqpf2b6799dq.apps.googleusercontent.com
+            client-secret: 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
+            authorization-grant-type: authorization_code
+            scope:
+              - openid
+              - profile
+              - email
+        provider:
+          google:
+            authorization-uri: https://accounts.google.com/o/oauth2/v2/auth
+            token-uri: https://oauth2.googleapis.com/token
+            user-info-uri: https://openidconnect.googleapis.com/v1/userinfo
+            user-name-attribute: sub

@@ -1,0 +1,20 @@
+plugins {
+  id 'java'
+  id 'org.springframework.boot' version '3.5.0'
+ }
+repositories {
+  mavenCentral()
+}
+group = "com.example"
+compileJava {
+    sourceCompatibility = 17
+    targetCompatibility = 17
+}
+dependencies {
+   implementation 'com.scalar.maven:scalar:0.1.0'
+   implementation 'org.springframework.boot:spring-boot-starter-webflux:3.5.0'
+   implementation 'org.springdoc:springdoc-openapi-starter-webflux-scalar:2.8.14'
+   implementation 'org.springframework.boot:spring-boot-starter-security:3.5.0'
+   implementation 'org.springframework.boot:spring-boot-starter-oauth2-client:3.5.0'
+}
+
